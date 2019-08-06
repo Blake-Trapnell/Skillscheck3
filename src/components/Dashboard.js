@@ -31,25 +31,27 @@ deleteHome(id) {
     render() {
         return (
             <div className = "display">
-                <body className = "dashboard">
+                <div className = "dashboard">
+                <header className = "dashboardheader">
+                    <h1 className='title'>Dashboard</h1>
+            <Link to = "/wizard">
+            <button className="addnewproperty">Add new Property</button>
+            </Link>
+                </header>
             {this.state.homes.map(el => {
                 return(
                     <div className="listing-display">
-                        <h4>{el.name}</h4>
-                        <h4>{el.address}</h4>
-                        <h4>{el.city}</h4>
-                        <h4>{el.state}</h4>
-                        <h4>{el.city}</h4>
-                        <h4>{el.zip}</h4>
-                        <button onClick={()=> this.deleteHome(el.id)}>Delete</button>
+                        <h4 className="list" >Property Name: {el.name}</h4>
+                        <h4 className="list" >Address: {el.address}</h4>
+                        <h4 className="list" >City: {el.city}</h4>
+                        <h4 className="list" >State: {el.state}</h4>
+                        <h4 className="list" >Zip: {el.zip}</h4>
+                        <button className="addnewproperty add" onClick={()=> this.deleteHome(el.id)}>Delete</button>
                     </div>
                 )
             })}
-            <Link to = "/wizard">
-            <button>Add new Property</button>
-            </Link>
 
-                </body>
+                </div>
         </div>
     )
 }

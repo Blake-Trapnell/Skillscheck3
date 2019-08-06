@@ -1,21 +1,55 @@
-main {
-    background-color: lightblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-button {
-    width: 150px;
-    height: 20px;
+* {
+    margin: 0;
 }
 
 .display {
     display: flex;
     justify-content: center;
-    background-color: #519872;
+    background-color: #AFD4C0;
 }
 
 .dashboard {
-    width: 100%;
+    width: 60%;
+    background-color: #e5f4ec;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.dashboardheader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5f4ec;
+    color: #519872;
+    border-bottom: #519872 2px solid;
+}
+
+.addnewproperty {
+    border: none;
+    background-color: #8aea92;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.listing-display {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    background-color: #dedede;
+    width: 90%;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.add {
+    width: 200px;
+}
+
+.list {
+    margin: 0 10px;
 }
