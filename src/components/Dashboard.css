@@ -1,0 +1,21 @@
+main {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+button {
+    width: 150px;
+    height: 20px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    background-color: #519872;
+}
+
+.dashboard {
+    width: 100%;
+}
