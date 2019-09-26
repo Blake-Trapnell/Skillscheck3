@@ -1,0 +1,30 @@
+.wizard-main {
+    display: flex;
+    justify-content: center;
+    background-color: #afd4c0;
+}
+
+.middle {
+    width: 80vw;
+    height: 82vh;
+    background-color: #E5f4ec;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    text-align: left;
+}
+
+.wizard-input {
+    margin: 10px 0;
+    width: 300px;
+}
+
+.nav-buttons {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}

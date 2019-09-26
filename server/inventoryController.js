@@ -13,8 +13,8 @@ module.exports = {
     add: (req,res) => {
         const db = req.app.get('db')
         console.log(req.body)
-        const {name, address, city, state, zip} = req.body
-        db.add_house([name, address, city, state, zip])
+        const {name, address, city, state, zip, img, mortgage, rent} = req.body
+        db.add_house([name, address, city, state, zip, img, mortgage, rent])
         .then(results=> {
             res.status(200).send(results)
         }).catch(err => res.status(500).send(err))

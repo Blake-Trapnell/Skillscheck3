@@ -24,6 +24,7 @@
     background-color: #e5f4ec;
     color: #519872;
     border-bottom: #519872 2px solid;
+    width: 95%;
 }
 
 .addnewproperty {
@@ -41,15 +42,30 @@
     flex-direction: column;
     text-align: left;
     background-color: #dedede;
-    width: 90%;
+    width: 100%;
     margin: 10px 0px;
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0;
 }
 
 .add {
-    width: 200px;
+    width: 100px;
 }
 
 .list {
     margin: 0 10px;
+}
+
+.main-listing-display {
+    display: flex;
+    width: 50vw;
+    height: 100%;
+}
+
+#house {
+    border-radius: none;
+    height: 91%;
+    width: 50%;
+    margin: 10px 0;
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
 }

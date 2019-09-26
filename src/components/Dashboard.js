@@ -19,6 +19,7 @@ componentDidMount() {
             homes: res.data
         })
     }).catch(err=> console.log(err))
+    console.log(this.state.homes)
 }
 
 deleteHome(id) {
@@ -40,13 +41,16 @@ deleteHome(id) {
                 </header>
             {this.state.homes.map(el => {
                 return(
+                    <div className= "main-listing-display">
+                    <img id = "house" src={el.img} alt='pictur of house img'/>
                     <div className="listing-display">
                         <h4 className="list" >Property Name: {el.name}</h4>
                         <h4 className="list" >Address: {el.address}</h4>
                         <h4 className="list" >City: {el.city}</h4>
                         <h4 className="list" >State: {el.state}</h4>
-                        <h4 className="list" >Zip: {el.zip}</h4>
+                        <h4 className="list" >Zip: {el.zipcode}</h4>
                         <button className="addnewproperty add" onClick={()=> this.deleteHome(el.id)}>Delete</button>
+                    </div>
                     </div>
                 )
             })}
